@@ -13,10 +13,9 @@ class TeamController extends Controller
      */
     public function index()
     {
-        return view('teams',[
-            'teams' => Team::all()
-        ]);
+        return view('teams', ['teams' => Team::all()]);
     }
+
 
     /**
      * Show the form for creating a new resource.

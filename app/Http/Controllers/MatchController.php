@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Matches;
+use App\Models\FootballMatch;
 
 class MatchController extends Controller
 {
@@ -14,7 +14,7 @@ class MatchController extends Controller
     public function index()
     {
         return view('matches',[
-            'matches'=>Matches::all()
+            'matches'=>FootballMatch::all()
         ]);
     }
 

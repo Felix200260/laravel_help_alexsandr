@@ -12,7 +12,7 @@ class Goals extends Model
     protected $table = 'goal';
     public function match()
     {
-        return $this->belongsTo(Matches::class);
+        return $this->belongsTo(FootballMatch::class);
     }
 
     public function users()

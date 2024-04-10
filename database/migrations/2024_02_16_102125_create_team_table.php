@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('teams', function (Blueprint $table) {  // Изменено на 'teams'
+        Schema::create('team', function (Blueprint $table) {  
             $table->id();
             $table->text('name');
         });
@@ -16,6 +16,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('teams');  // Изменено на 'teams'
+        Schema::dropIfExists('team');  
     }
 };
